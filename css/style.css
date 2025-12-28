@@ -1,0 +1,36 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #27ae60;
+    --light: #ecf0f1;
+    --text: #333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+
+.container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+.section-title { text-align: center; margin-bottom: 30px; font-size: 2rem; color: var(--primary); }
+
+header { background: #fff; padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: auto; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav a { text-decoration: none; color: var(--primary); font-weight: bold; }
+
+.hero { background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/hero-bg.jpg'); background-size: cover; color: #fff; padding: 100px 20px; text-align: center; }
+.highlight { color: var(--accent); }
+.btn-main { background: var(--accent); color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 20px; font-size: 1.2rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { padding: 30px; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--accent); }
+
+.bg-light { background: var(--light); }
+.pricing-table { max-width: 400px; margin: auto; background: white; padding: 40px; border-radius: 10px; text-align: center; border: 2px solid var(--accent); }
+.price { font-size: 2.5rem; font-weight: bold; color: var(--accent); margin: 15px 0; }
+.price small { display: block; font-size: 1rem; color: var(--text); }
+
+.quote-box { font-style: italic; text-align: center; background: #f9f9f9; padding: 40px; border-radius: 10px; margin: 40px 0; }
+
+footer { background: var(--primary); color: white; padding: 60px 20px; }
+.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.badge-sap { border: 2px dashed #fff; padding: 20px; border-radius: 10px; text-align: center; max-width: 250px; }
