@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Animation d'apparition des éléments au défilement
-    const elementsToAnimate = document.querySelectorAll('.card, .testimonial-card');
+    const elementsToAnimate = document.querySelectorAll('.card');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -18,13 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Gestion du défilement fluide pour les liens d'ancrage
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
