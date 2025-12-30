@@ -60,8 +60,8 @@
             </div>
             <div class="about-content">
                 <h2 class="about-title">L'expertise technique, <span class="highlight">le sens du service.</span></h2>
-                <p class="lead">Bonjour, je suis <strong>Sylvain Rotureau</strong>.</p>
-                <p>Fort d'une expérience de plus de 10 ans dans le support technique de haut niveau (notamment chez <strong>Apple</strong> à Cork et Montréal, ainsi qu'à la <strong>SocramBanque</strong> et la <strong>MAAF</strong> à Niort), je mets aujourd'hui mon savoir-faire au service de vos besoins quotidiens.</p>
+                <p class="lead">Bonjour, je suis Sylvain Rotureau.</p>
+                <p>Fort d'une expérience de plus de 10 ans dans le support technique (notamment chez <strong>Apple</strong>, <strong>SocramBanque</strong> et <strong>MAAF</strong>), je mets aujourd'hui mon savoir-faire au service de vos besoins quotidiens.</p>
                 <div class="about-highlights">
                     <div class="h-item"><strong>✓ Patient :</strong> J'explique sans jargon technique.</div>
                     <div class="h-item"><strong>✓ Rigoureux :</strong> Issu de l'informatique et de la pâtisserie, j'ai le sens du détail.</div>
@@ -81,14 +81,10 @@
                 <p>Réactivité garantie pour toutes les communes de l'agglomération niortaise.</p>
             </div>
             <div class="communes-grid">
-                <span class="city">📍 Niort</span>
-                <span class="city">📍 Chauray</span>
-                <span class="city">📍 Aiffres</span>
-                <span class="city">📍 Vouillé</span>
-                <span class="city">📍 Bessines</span>
-                <span class="city">📍 Échiré</span>
-                <span class="city">📍 St-Gelais</span>
-                <span class="city">📍 Magné</span>
+                <span class="city">📍 Niort</span><span class="city">📍 Chauray</span>
+                <span class="city">📍 Aiffres</span><span class="city">📍 Vouillé</span>
+                <span class="city">📍 Bessines</span><span class="city">📍 Échiré</span>
+                <span class="city">📍 St-Gelais</span><span class="city">📍 Magné</span>
                 <span class="city">📍 Coulon</span>
             </div>
         </div>
@@ -118,14 +114,45 @@
         <div>
             <h2>Me Contacter</h2>
             <p><strong>Sylvain Rotureau</strong></p>
-            <p>📞 <a href="tel:0613014066" style="color:white;">06 13 01 40 66</a></p>
+            <p>📞 <a href="tel:0613014066" style="color:white; text-decoration:none;">06 13 01 40 66</a></p>
             <p>📧 sylvainrotureau@yahoo.fr</p>
         </div>
         <div class="badge-sap">
             Crédit d'impôt de 50% : Je vous accompagne pour simplifier vos démarches fiscales.
         </div>
     </div>
+    <div class="footer-bottom">
+        <p>© 2024 Sylvain Rotureau | 
+           <a href="javascript:void(0)" onclick="openModal('modal-legals')">Mentions Légales</a> | 
+           <a href="javascript:void(0)" onclick="openModal('modal-privacy')">Confidentialité</a>
+        </p>
+    </div>
 </footer>
 
+<div id="cookie-banner" class="cookie-banner">
+    <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+    <button onclick="acceptCookies()" class="btn-cookie">Accepter</button>
+</div>
+
+<div id="modal-legals" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-legals')">&times;</span>
+        <h2>Mentions Légales</h2>
+        <p><strong>Éditeur :</strong> Sylvain Rotureau (Entrepreneur Individuel)</p>
+        <p><strong>Siège social :</strong> Niort (79000)</p>
+        <p><strong>SIRET :</strong> [À compléter après réception]</p>
+        <p><strong>Hébergeur :</strong> GitHub Pages</p>
+    </div>
+</div>
+
+<div id="modal-privacy" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-privacy')">&times;</span>
+        <h2>Confidentialité</h2>
+        <p>Les données collectées via ce site sont uniquement destinées à la gestion de vos demandes d'intervention. Conformément au RGPD, vous disposez d'un droit d'accès et de suppression.</p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
